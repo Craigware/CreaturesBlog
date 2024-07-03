@@ -4,14 +4,14 @@ import { RouterView, RouterLink } from 'vue-router';
 
 <template>
   <div>
-  <nav>
+  <!-- <nav>
     <h1>Creature's Keep</h1>
     <RouterLink to="/">Home</RouterLink>
     <RouterLink to="/Design-Document">Design Document</RouterLink>
     <RouterLink to="/About-Me">About Me</RouterLink>
     <RouterLink to="/Blog-Posts">Blog Posts</RouterLink>
     <RouterLink to="/Concept-Art">Concept Art</RouterLink>
-  </nav>
+  </nav> -->
   <main>
     <RouterView></RouterView>
   </main>
@@ -21,12 +21,12 @@ import { RouterView, RouterLink } from 'vue-router';
 <style scoped>
   div {
     display: grid;
-    grid-template-columns: 1.25fr 8.75fr;
+    /* grid-template-columns: 1.25fr 8.75fr; */
   }
 
   nav {
     display: inline-block;
-    height: 100vh;
+    height: calc(100% - 16px);
     padding: 8px;
     text-align: center;
     vertical-align: top;
