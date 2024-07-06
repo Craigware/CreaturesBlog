@@ -40,7 +40,6 @@ import { RouterLink } from 'vue-router';
   </div>
 </section>
 <section id="GameDescription">
-
 </section>
 </template>
 
