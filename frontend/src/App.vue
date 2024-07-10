@@ -1,5 +1,8 @@
 <script setup>
 import { RouterView, RouterLink } from 'vue-router';
+import DropDown from './components/DropDown.vue';
+
+const arr = [1,2,3];
 </script>
 
 <template>
@@ -12,7 +15,10 @@ import { RouterView, RouterLink } from 'vue-router';
     <RouterLink to="/About-Me">About Me</RouterLink>
     <RouterLink to="/Blog-Posts">Blog Posts</RouterLink>
     <RouterLink to="/Concept-Art">Concept Art</RouterLink>
+    <RouterLink to="/Documentation">Documentation</RouterLink>
+    <DropDown :options=[1,2,3]></DropDown>
   </nav>
+
   <main>
     <RouterView></RouterView>
   </main>
